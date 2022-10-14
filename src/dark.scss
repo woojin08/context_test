@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+.App {
+    height: 100vh;
+
+    &.on {
+        background: #333;
+        color: #fff;
+    }
+
+    .dark_btn {
+        position: relative;
+
+        button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            background: #ddd;
+            font-size: 0;
+        }
+    }
+}
